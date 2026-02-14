@@ -9,9 +9,18 @@
 </head>
 
 <body>
-    <h1>Hello from Node.js!</h1>
-    <p>This is a static file served by an Express server.</p>
-    <button onclick="showAlert()">Click Me</button>
+    <h1>MongoDB Collection Viewer</h1>
+    <p>Data is loaded from your MongoDB cluster using <strong>MONGODB_URI</strong>.</p>
+
+    <div class="controls">
+        <input id="dbInput" type="text" placeholder="Database name (optional if in URI)">
+        <input id="collectionInput" type="text" placeholder="Collection name (required)">
+        <input id="limitInput" type="number" min="1" max="100" value="20">
+        <button id="loadBtn">Load Data</button>
+    </div>
+
+    <p id="status"></p>
+    <div id="tableContainer"></div>
 
     <script src="script.js"></script>
 </body>

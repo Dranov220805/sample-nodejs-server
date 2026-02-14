@@ -1,9 +1,60 @@
 body {
     font-family: sans-serif;
     text-align: center;
-    padding-top: 50px;
+    padding: 30px;
+    background: #f5f7fb;
 }
 
 h1 {
     color: #007bff;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+input,
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+button {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+}
+
+#status {
+    margin: 8px 0 16px;
+    color: #334155;
+}
+
+#tableContainer {
+    max-width: 100%;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #e2e8f0;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eaf2ff;
 }
